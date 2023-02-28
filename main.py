@@ -177,7 +177,7 @@ async def savol_qabul_qilish(message: Message, state: FSMContext):
         question_d = cursor.fetchall()[-1][0]
 
 
-    await bot.send_message('-1001871700017', f'{chat_id}\n{question_d}-savol:\n{question}\n\nSavol beruvchi: {user}  @{username}', reply_markup=InlineKeyboardMarkup().add(InlineKeyboardButton(text='javob berish', callback_data=f'javob_{chat_id}_{question_d}')))
+    await bot.send_message('-1001785237896', f'{chat_id}\n{question_d}-savol:\n{question}\n\nSavol beruvchi: {user}  @{username}', reply_markup=InlineKeyboardMarkup().add(InlineKeyboardButton(text='javob berish', callback_data=f'javob_{chat_id}_{question_d}')))
     await bot.send_message(chat_id, f'Sizning savolingiz raqami: {question_d}-savol\nMurojaatlar ko\'pligi sababidan javoblar kechikishi mumkin. Biroq imkon qadar tezroq javob berishga harakat qilamiz!')
     await state.finish()
 
